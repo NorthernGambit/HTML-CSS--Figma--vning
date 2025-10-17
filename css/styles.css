@@ -29,8 +29,8 @@ a {
     width: 100%;
     max-width: 1451;
     aspect-ratio: 1451 / 930;
-    background-size: contain;
-    background-position: top center;
+    background-size: cover;
+    background-position: center;
     margin: 0px auto;
     padding-top: 2rem;
 }
@@ -48,7 +48,7 @@ a {
     place-items: center;
     position: fixed;
     width: 1384px;
-    height: 85px;
+    /* height: 85px; */
     background-color: #F2F2F2;
     left: 50%;
     transform: translateX(-50%);
@@ -58,6 +58,7 @@ a {
 /* Bra tips av jesper för att göra störra klickyta. 
 Klassen link används 2ggr med 2 olika fonts, därför skrivar jag specifikt .menu > .link*/
 .menu > .link {
+    display: inline-block;
     color: black;
     font-size: 1.5rem;
     font-weight: 400;
@@ -101,6 +102,7 @@ Klassen link används 2ggr med 2 olika fonts, därför skrivar jag specifikt .me
     background-color: #5B2E48;
     border-color: #5B2E48;
     box-shadow: 0px 4px 4px 0px #00000040;
+    cursor: pointer;
 
 }
 
