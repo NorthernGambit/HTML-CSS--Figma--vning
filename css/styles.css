@@ -1,0 +1,138 @@
+/* Importerar fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Sätter all text till roboto font */
+h1, h2, h3, h4, h5, h6, a, p {
+    font-family: roboto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+
+/* Ställ in all margin och padding till 0 */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Ställer in storlek på hela sidan och centrerar den */
+.wrapper {
+    max-width: 1451px;
+    margin: 0 auto;
+}
+
+.header-image {
+    background-image: url(../images/get_coding.png);
+    width: 100%;
+    max-width: 1451;
+    aspect-ratio: 1451 / 930;
+    background-size: contain;
+    background-position: top center;
+    margin: 0px auto;
+    padding-top: 2rem;
+}
+
+/* hittade ett renare sätt att lägga till padding i min figure ovan. Provade bara använda margin först, behövde vara padding för att inte påverka bilden */
+/* .header-section {
+    padding-top: 2rem;
+} */
+
+/* Hittade i w3docs hur man centrerar en 'fixed position' element i css och att man kan använda grid för att lätt centrera element */
+.header-content {
+    /* Hittade hur man gjorde en drop shadow genom att klicka på kopiera i figma filen :D */
+    box-shadow: 1px 1px 21px 0px #DCDCDC;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    width: 1384px;
+    height: 85px;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Bra tips av jesper för att göra störra klickyta. 
+Klassen link används 2ggr med 2 olika fonts, därför skrivar jag specifikt .menu > .link*/
+.menu > .link {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1.5rem;
+}
+
+/* Kolla att klickyta funkar */
+.menu > .link:hover {
+    background-color: lightgrey;
+}
+
+/* Använder grid igen för att centrera innehållet, lade en section runt h2 och button för att centrera dom tillsammans. Använda div här kanske? */
+.main-content {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1451px;
+    aspect-ratio: 1451 / 930;
+    background-color: #587291;
+    margin: 0 auto;
+}
+
+.heading {
+    color: white;
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin: 1rem;
+}
+
+.button {
+    margin: 1rem;
+    border: 1px solid red;
+    border-radius: 6px;
+    width: 216px;
+    height: 67px;
+    /* 30px font var lite krångligt att översätta till rem */
+    font-size: 1.875rem;
+    color: white;
+    background-color: #5B2E48;
+    border-color: #5B2E48;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+.button:hover {
+    background-color: #963a6f;
+    border-color: #963a6f;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+/* Gillar hur lätt det är med grid, blir nog bättre med flexbox */
+.footer-content {
+    display: grid;
+    place-items: center end;
+    text-align: end;
+    width: 100%;
+    max-width: 1451px;
+    aspect-ratio: 1451 / 164;
+
+}
+
+.navigation {
+    padding-right: 2.5rem;
+}
+
+.link {
+    padding: 0.5rem;
+    font-weight: 400;
+    font-size: 1.875rem;
+}
+
+.navigation .link:hover {
+    background-color: lightgray;
+    font-weight: 400;
+    font-size: 1.875rem;
+}
