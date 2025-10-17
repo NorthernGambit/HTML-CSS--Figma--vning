@@ -49,7 +49,7 @@ a {
     position: fixed;
     width: 1384px;
     height: 85px;
-    background-color: white;
+    background-color: #F2F2F2;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -112,6 +112,7 @@ Klassen link används 2ggr med 2 olika fonts, därför skrivar jag specifikt .me
 
 /* Gillar hur lätt det är med grid, blir nog bättre med flexbox */
 .footer-content {
+    background-color: #F8F8F8;
     display: grid;
     place-items: center end;
     text-align: end;
