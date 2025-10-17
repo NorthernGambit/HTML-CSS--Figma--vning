@@ -96,6 +96,7 @@ Klassen link används 2ggr med 2 olika fonts, därför skrivar jag specifikt .me
     height: 67px;
     /* 30px font var lite krångligt att översätta till rem */
     font-size: 1.875rem;
+    font-weight: 400;
     color: white;
     background-color: #5B2E48;
     border-color: #5B2E48;
