@@ -125,13 +125,13 @@ Klassen link används 2ggr med 2 olika fonts, därför skrivar jag specifikt .me
     padding-right: 2.5rem;
 }
 
-.navigation .link {
+.navigation > .link {
     padding: 0.5rem;
     font-weight: 400;
     font-size: 1.875rem;
 }
 
-.navigation .link:hover {
+.navigation > .link:hover {
     background-color: lightgray;
     font-weight: 400;
     font-size: 1.875rem;
