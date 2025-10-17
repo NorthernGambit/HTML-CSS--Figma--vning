@@ -40,7 +40,7 @@ a {
     padding-top: 2rem;
 } */
 
-/* Hittade i w3docs hur man centrerar en 'fixed position' element i css och att man kan använda grid för att lätt centrera element */
+/* Hittade i w3docs hur man centrerar en 'fixed position' element i css och att man kan använda grid för att lätt centrera child element */
 .header-content {
     /* Hittade hur man gjorde en drop shadow genom att klicka på kopiera i figma filen :D */
     box-shadow: 1px 1px 21px 0px #DCDCDC;
@@ -125,7 +125,7 @@ Klassen link används 2ggr med 2 olika fonts, därför skrivar jag specifikt .me
     padding-right: 2.5rem;
 }
 
-.link {
+.navigation .link {
     padding: 0.5rem;
     font-weight: 400;
     font-size: 1.875rem;
